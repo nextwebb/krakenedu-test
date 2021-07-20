@@ -1,0 +1,19 @@
+//Variables
+$website-width: 1100px;
+
+//Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@function set-btn-hover-color($color) {
+  @if ($color == $secondary-color) {
+    @return $main-color;
+  } @else {
+    @return $light-color;
+  }
+}

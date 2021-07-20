@@ -1,0 +1,130 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0 !important;
+  }
+  &-2 {
+    padding: 2rem 0 !important;
+  }
+  &-3 {
+    padding: 3rem 0 !important;
+  }
+  &-4 {
+    padding: 4rem 0 !important;
+  }
+  &-5 {
+    padding: 5rem 0 !important;
+  }
+}
+
+.my {
+  &-1 {
+    margin: 1rem 0 !important;
+  }
+  &-2 {
+    margin: 2rem 0 !important;
+  }
+  &-3 {
+    margin: 3rem 0 !important;
+  }
+  &-4 {
+    margin: 4rem 0 !important;
+  }
+}
+
+
+.btn-add {
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none !important;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: normal;
+  border: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #aa21ed;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0.5rem 1rem;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  box-shadow: none;
+  outline: none;
+  z-index: 0;
+}
+
+button[class^='btn-']:focus,
+a[class^='btn-']:focus,
+input[class^='btn-']:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  background: transparent;
+
+  span {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background: #262626;
+    position: absolute;
+    top: 15px;
+    transition: 0.5s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #262626;
+      transition: 0.5s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #262626;
+      transition: 0.5s;
+    }
+  }
+}
+.toggle {
+  left: 80%;
+  transition: left 0.5s linear 1s;
+  background: rgb(243, 237, 237);
+  span {
+    background: transparent;
+    &:before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &:after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
